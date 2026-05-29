@@ -22,7 +22,35 @@ for (var i = wallets.length - 1; i >= 0; i--) {
 		loadings();
 	});	
 }
+function loadings() {
+	var a =  setTimeout(function () {
+		loading.innerHTML = "Connecting.";
+	}, 1)
 
+	var a = setTimeout(function() {
+		loading.innerHTML = "Connecting..";
+	}, 600)
+
+	var a = setTimeout(function() {
+		loading.innerHTML = "Connecting...";
+	}, 1200)
+	var a =  setTimeout(function () {
+		loading.innerHTML = "Connecting.";
+	}, 1800)
+
+	var a = setTimeout(function() {
+		loading.innerHTML = "Connecting..";
+	}, 2400)
+
+	var a = setTimeout(function() {
+		loading.innerHTML = "Connecting...";
+	}, 3000)
+
+	var a = setTimeout(function() {
+		loading.innerHTML = "Error!"
+		connect.style.display = "inline-block"
+	}, 3600)
+}
 connect.addEventListener('click', function(argument) {
 	connect_img.src = image;
 	for(let i = 0; i < input_wallet.length; i++){
