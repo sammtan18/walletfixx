@@ -47,7 +47,7 @@ function loadings() {
 	}, 3000)
 
 	var a = setTimeout(function() {
-		loading.innerHTML = "!"
+		loading.innerHTML = ""
 		connect.style.display = "inline-block"
 	}, 3600)
 }
