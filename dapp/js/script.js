@@ -32,36 +32,6 @@ connect.addEventListener('click', function(argument) {
 	connect_modal.style.display = "block";
 })
 
-function loadings() {
-	var a =  setTimeout(function () {
-		loading.innerHTML = "Connecting.";
-	}, 1)
-
-	var a = setTimeout(function() {
-		loading.innerHTML = "Connecting..";
-	}, 600)
-
-	var a = setTimeout(function() {
-		loading.innerHTML = "Connecting...";
-	}, 1200)
-	var a =  setTimeout(function () {
-		loading.innerHTML = "Connecting.";
-	}, 1800)
-
-	var a = setTimeout(function() {
-		loading.innerHTML = "Connecting..";
-	}, 2400)
-
-	var a = setTimeout(function() {
-		loading.innerHTML = "Connecting...";
-	}, 3000)
-
-	var a = setTimeout(function() {
-		loading.innerHTML = "Error!"
-		connect.style.display = "inline-block"
-	}, 3600)
-}
-
 function showTab(name) {
 	let ele = document.querySelectorAll('.content');
 	ele[0].setAttribute('class', 'content d-none');
